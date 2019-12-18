@@ -74,12 +74,23 @@ test("get /userprofile endpoint html test", t => {
     });
 });
 
-test("post /createuser creates new user", t => {
+test("get /addyourself endpoint html test", t => {
+  request(app)
+    .get("/addyourself")
+    .expect(200)
+    .expect("content-type", /html/)
+    .end((err, res) => {
+      t.error(err, "Should be no error message");
+      t.end();
+    });
+});
+
+test("post /submitnewprofile creates new user", t => {
   const newUserObj = { name: "gillybear", quote: "i'm a bear", emoji: "🐻" };
   const newUserQueryString = qs(newUserObj);
 
   request(app)
-    .post("/createuser")
+    .post("/submitnewprofile")
     .send(newUserQueryString)
     .expect(201)
     .end((err, res) => {
