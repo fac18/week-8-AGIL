@@ -100,3 +100,14 @@ test("delete /deleteuser test", t => {
       t.end();
     });
 });
+
+test("404 test", t => {
+  request(app)
+    .get("/rabbit")
+    .expect(404)
+    .expect("content-type", /html/)
+    .end((err, res) => {
+      t.error(err, "Should be no error message");
+      t.end();
+    });
+});
