@@ -1,0 +1,35 @@
+{
+  "name": "week-8-AGIL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape tests/* | tap-spec",
+    "testdb": "NODE_ENV=test node src/tests/database-test.js",
+    "dev": "nodemon src/server/server.js",
+    "coverage": "nyc tape src/tests/*.js | tap-spec",
+    "start": "node src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac18/week-8-AGIL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac18/week-8-AGIL/issues"
+  },
+  "homepage": "https://github.com/fac18/week-8-AGIL#readme",
+  "dependencies": {
+    "codecov": "^3.6.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.5.3",
+    "nodemon": "^2.0.2",
+    "nyc": "^14.1.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.12.0"
+  }
+}
