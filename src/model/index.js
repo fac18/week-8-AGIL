@@ -1,1 +1,1 @@
-module.exports = ["Rosalie", "Gillian", "Reda", "Nikke"];
+module.exports = ["rosalie", "gillian", "reda", "nikke"];
