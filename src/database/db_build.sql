@@ -9,8 +9,7 @@ CREATE TABLE users (
     image_prof VARCHAR(400),
     image_party VARCHAR(400),
     quote VARCHAR(100) NOT NULL,
-    emoji VARCHAR(1) NOT NULL,
-    tea_coffee VARCHAR(6),
+     tea_coffee VARCHAR(6),
     hogwarts VARCHAR(15)
     cuisine VARCHAR(100),
     fruit VARCHAR(50),
