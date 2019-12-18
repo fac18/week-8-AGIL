@@ -24,7 +24,7 @@ app.engine(
   })
 );
 
-app.set("port", process.envPort || 1235);
+app.set("port", process.env.PORT || 1235);
 // app.use(favicon(path.join(__dirname, "..", "public", "favicon.ico")));
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(controllers);
