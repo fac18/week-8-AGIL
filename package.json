@@ -1,5 +1,5 @@
 {
-  "name": "week-8-AGIL",
+  "name": "week-8-agil",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -31,5 +31,9 @@
     "nyc": "^14.1.1",
     "tap-spec": "^5.0.0",
     "tape": "^4.12.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {}
 }
