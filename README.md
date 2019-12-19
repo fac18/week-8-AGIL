@@ -7,11 +7,14 @@ Team AGILé
 ### Installation instructions
 1. clone the repo ```git clone https://github.com/fac18/week-8-AGIL.git```
 2. run ```npm i``` 
-3. check our tests with ```npm run test```
+3. set up a .env in your root folder with DATABASE_URL and TEST_DATABASE_URL paths (ask us!)
+4. check our tests with ```npm run test```
 
 Or test database and server separately with:
   * ```npm run testdb```
   * ```npm run testserver```
+  
+5. start the server with ```npm start``` and go to localhost:1235!
 
 Tests
 
