@@ -4,15 +4,15 @@ DROP TABLE IF EXISTS users, cohorts CASCADE;
 
 CREATE TABLE cohorts (
     cohort_id SERIAL PRIMARY KEY,
-    name VARCHAR(6)
+    cohort_name VARCHAR(6)
 );
 
-INSERT INTO cohorts (name) VALUES
+INSERT INTO cohorts (cohort_name) VALUES
 ('FAC 18');
 
 CREATE TABLE users (
-    users_id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
+    user_id SERIAL PRIMARY KEY,
+    user_name VARCHAR(100) NOT NULL,
     cohort_id INTEGER REFERENCES cohorts(cohort_id),
     image_prof VARCHAR(400),
     image_party VARCHAR(400),
@@ -30,7 +30,7 @@ CREATE TABLE users (
 );
 
 
-INSERT INTO users(name, cohort_id, image_prof, image_party, quote, emoji, tea_coffee, hogwarts, cuisine, fruit, snack, show, js, pokemon, emojigram) VALUES 
+INSERT INTO users(user_name, cohort_id, image_prof, image_party, quote, emoji, tea_coffee, hogwarts, cuisine, fruit, snack, show, js, pokemon, emojigram) VALUES 
 ('Ayub',1,'URLHERE', 'URLHERE', '"Alright, boss!"', '👀', 'No caffeine', 'Slytherin', 'Rice and chicken', 'Pineapple', 'Fizzy laces', 'Vikings', 'Reduce', 'Charizard', '👀👀👀👀👀'),
 ('Gillian',1,'URLHERE', 'URLHERE', '""', '', 'Tea', 'Ravenclaw', 'Pub Food', 'Satsuma', 'Pickled Onion Monster Munch', 'Peep Show', 'setTimeout', 'Snorlax', '👊🐼'),
 ('Nikke',1,'URLHERE', 'URLHERE', '"Unlimited Graph Paper!"', '🤓', 'Tea', 'Ravenclaw', 'Duck and rice', 'Mangosteen', 'Chocolate Raisins', 'Fleabag', '"Why is everything an object?!"', 'Pikachu', ''),
