@@ -4,9 +4,16 @@
   {{#each cohort}}
   <li class="cohort_member">
     <a href="/cohort/{{user_name}}">
-      <img class="cohort_image_prof" src="{{image_prof}}" alt="">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="cohort-image" src="{{image_prof}}" alt="professional image">
+          </div>
+          <div class="flip-card-back">
+            <img class="cohort-image" src="{{image_party}}" alt="party image">
+          </div>
+        </div>
       </div>
-      <img class="cohort_image_party" src="{{image_party}}" alt="">
       <h2 class="user_name">{{user_name}}</h2>
     </a>
     <p>{{quote}}</p>
