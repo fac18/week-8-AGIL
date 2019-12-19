@@ -19,11 +19,17 @@ Tests
 
 Build a server-rendered full-stack app
 
+
+.... FAC 18 Yearbook!
+
+![](https://i.imgur.com/wRWHHBk.png=100x)
+
+
 ### Task
 
-- Build an app using the Express framework.
-- Use a PostgreSQL database to store and retrieve your data.
-- Use the retrieved data to populate a Handlebars template for _server-side_ rendering to be displayed on the front-end.
+- Build an app using the Express framework
+- Use a PostgreSQL database to store and retrieve your data
+- Use the retrieved data to populate a Handlebars template for _server-side_ rendering to be displayed on the front-end
 
 ### User Stories
 As a member of FAC, I would like to: 
@@ -54,7 +60,7 @@ As a member of FAC, I would like to:
 
 ✅ Try to include ES6 syntax on the server
 
-![](https://media.giphy.com/media/xSYLxjcvDAMlW/giphy.gif
+![](https://media.giphy.com/media/xSYLxjcvDAMlW/giphy.gif)
 
 ### Schema
 
