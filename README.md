@@ -5,9 +5,13 @@ Team AGILé
 ![](https://media.giphy.com/media/UatRnEUNX8iCQ/giphy.gif)
 
 ### Installation instructions
-clone the repo
-run npm i 
-check our tests with npm test or check individual parts with npm testdb and npm testserver
+1. clone the repo ```git clone https://github.com/fac18/week-8-AGIL.git```
+2. run ```npm i``` 
+3. check our tests with ```npm run test```
+
+Or test database and server separately with:
+  * ```npm run testdb```
+  * ```npm run testserver```
 
 Tests
 
