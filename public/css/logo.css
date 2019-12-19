@@ -34,7 +34,7 @@ svg {
 
   50% {
     transform: rotateX(-180deg) translate(1700px, 0px);
-    fill: red;
+    fill: #e17daa;
   }
   75% {
     transform: rotateX(-90deg) translate(850px, 0px);
@@ -58,7 +58,7 @@ svg {
   }
   50% {
     transform: rotateY(-180deg) translate(800px, 0px);
-    fill: rgba(218, 200, 42, 0.931);
+    fill: #4d59a1;
   }
   75% {
     transform: rotateY(-90deg) translate(400px, 0px);
@@ -81,7 +81,7 @@ svg {
   }
   50% {
     transform: rotate(180deg) translate(700px, 0px);
-    fill: blue;
+    fill: #70c0bf;
   }
   75% {
     transform: rotate(270deg) translate(350px, 0px) scale(0);
