@@ -91,12 +91,38 @@ tape("3. Check we can delete a specific user ", t => {
     if (err) {
       throw err;
     }
-    getData.deleteUsers(user_name, (err, res) => {
+    deleteData.deleteUser(user_name, (err, res) => {
       if (err) {
         throw err;
       }
       t.deepEqual(res, "", "should return empty");
       t.end();
+    });
+  });
+});
+
+tape("4. Check we can add new profile", t => {
+  runDbBuild((err, res) => {
+    if (err) {
+      throw err;
+    }
+    postData.postUser(userInput, (err, res) => {
+      if (err) {
+        throw err;
+      } else {
+        getData.getSpecificUser(userInput.user_name, (err, res) => {
+          if (err) {
+            throw err;
+          } else {
+            t.deepEqual(
+              res.user_name,
+              userInput.user_name,
+              "New username should match"
+            );
+            t.end();
+          }
+        });
+      }
     });
   });
 });
