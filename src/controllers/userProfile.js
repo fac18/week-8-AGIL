@@ -2,7 +2,6 @@ const getData = require("./../queries/getData");
 
 exports.get = (request, response) => {
   const { userProfile } = request.params;
-  console.log({ userProfile });
   getData.getSpecificUser(userProfile, (err, res) => {
     if (err) {
       throw error;
