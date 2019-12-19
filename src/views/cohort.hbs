@@ -1,11 +1,12 @@
 <h1>FAC18 COHORT</h1>
 
-<ul>
+<ul id="cohort-gallery">
   {{#each cohort}}
   <li class="cohort_member">
-    <img class="image_prof" src="{{image_prof}}" alt="">
-    <img class="image_party" src="{{image_party}}" alt="">
     <a href="/cohort/{{user_name}}">
+      <img class="cohort_image_prof" src="{{image_prof}}" alt="">
+      </div>
+      <img class="cohort_image_party" src="{{image_party}}" alt="">
       <h2 class="user_name">{{user_name}}</h2>
     </a>
     <p>{{quote}}</p>
