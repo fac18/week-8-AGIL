@@ -1,6 +1,50 @@
+:root {
+  /* colour variables */ 
+  --zack: #70c0bf;
+  --slater: #d0654a;
+  --kelly: #e17daa;
+  --screech: #4d59a1;
+  --lisa: #fbe46a;
+  --jessie: white;
+  /* spacing variables: golden ratio */
+  --space-xs: 0.382rem;
+  --space-s: 0.618rem;
+  --space-m: 1rem;
+  --space-l: 1.618rem;
+  --space-xl: 2.618rem;
+  --space-xxl: 4.236rem;
+  /* Fonts  */
+  --courier: 'Courier Prime', monospace;
+  --reenie: 'Reenie Beanie', cursive;
+}
+
+/* global styling */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  background: url("/images/sbtb-bground.png") no-repeat fixed;
+  background-size: cover;
+  color: var(--jessie);
+}
+
+body {
+
+}
+
+h1 {
+  font-family: var(--reenie);
+}
+
+
+
+/* Error page styling */
 .error__desc {
-  color: red;
-  font-family: "Courier Prime", monospace;
+  color: var(--slater);
+  font-family: var(--courier);
   text-align: center;
   padding: 1rem;
 }
@@ -9,3 +53,6 @@
   width: 60vw;
   margin: auto;
 }
+
+
+
