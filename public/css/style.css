@@ -1,0 +1,11 @@
+.error__desc {
+  color: red;
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  padding: 1rem;
+}
+
+.error__image {
+  width: 60vw;
+  margin: auto;
+}
