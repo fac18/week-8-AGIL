@@ -87,7 +87,7 @@ test("get /addyourself endpoint html test", t => {
 
 test("post /submitnewprofile creates new user", t => {
   const newUserObj = { name: "gillybear", quote: "i'm a bear", emoji: "🐻" };
-  const newUserQueryString = qs(newUserObj);
+  const newUserQueryString = qs.stringify(newUserObj);
 
   request(app)
     .post("/submitnewprofile")
