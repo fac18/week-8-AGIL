@@ -1,5 +1,9 @@
 # week-8-AGIL
 
+Team AGILé
+
+![](https://media.giphy.com/media/UatRnEUNX8iCQ/giphy.gif)
+
 ### Installation instructions
 clone the repo
 run npm i 
@@ -7,7 +11,8 @@ check our tests with npm test or check individual parts with npm testdb and npm 
 
 Our app seems to have stopped working on heroku...
 
-Tests!
+Tests
+
 [![codecov](https://codecov.io/gh/fac18/week-8-AGIL/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week-8-AGIL)
 
 [![Build Status](https://travis-ci.com/fac18/week-8-AGIL.svg?branch=master)](https://travis-ci.com/fac18/week-8-AGIL)
@@ -49,10 +54,12 @@ Use Heroku or a similar service to host the app and the database.
 
 ✅ Try to include ES6 syntax on the server.
 
-
+![](https://media.giphy.com/media/xSYLxjcvDAMlW/giphy.gif)
 
 ### We learnt: 
 
--  in express this line means you don't need to ref public in the route for your images or css files coming from the html file because it's already done!
+-  In express this line means you don't need to ref public in the route for your images or css files coming from the html file because it's already done!
 
 ``app.use(express.static(path.join(__dirname, "..", "public")));``
+
+- Don't change names of things! We changed some column names part way through (eg rename 'name' in the users table to 'user_name', and then had to go scouting for other instances all across different files
