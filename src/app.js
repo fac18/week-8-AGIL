@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const bodyparser = require("body-parser");
 // const favicon = require("server-favicon");
 
 // import "express-handlebars"
@@ -23,6 +24,8 @@ app.engine(
     helpers,
   })
 );
+
+app.use(bodyparser.urlencoded({ extended: false }));
 
 app.set("port", process.env.PORT || 1235);
 // app.use(favicon(path.join(__dirname, "..", "public", "favicon.ico")));

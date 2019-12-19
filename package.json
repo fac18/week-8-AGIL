@@ -9,7 +9,7 @@
     "testserver": "NODE_ENV=test node tests/server.test.js",
     "dev": "NODE_ENV=test nodemon src/index.js",
     "coverage": "NODE_ENV=test nyc tape src/tests/*.js | tap-spec",
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "dbbuild": "node src/database/db_init.js"
   },
   "repository": {
