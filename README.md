@@ -5,9 +5,13 @@ Team AGILé
 ![](https://media.giphy.com/media/UatRnEUNX8iCQ/giphy.gif)
 
 ### Installation instructions
-clone the repo
-run npm i 
-check our tests with npm test or check individual parts with npm testdb and npm testserver
+1. clone the repo ```git clone https://github.com/fac18/week-8-AGIL.git```
+2. run ```npm i``` 
+3. check our tests with ```npm run test```
+
+Or test database and server separately with:
+  * ```npm run testdb```
+  * ```npm run testserver```
 
 Tests
 
@@ -19,11 +23,17 @@ Tests
 
 Build a server-rendered full-stack app
 
+
+.... FAC 18 Yearbook!
+
+![](https://i.imgur.com/wRWHHBk.png=100x)
+
+
 ### Task
 
-- Build an app using the Express framework.
-- Use a PostgreSQL database to store and retrieve your data.
-- Use the retrieved data to populate a Handlebars template for _server-side_ rendering to be displayed on the front-end.
+- Build an app using the Express framework
+- Use a PostgreSQL database to store and retrieve your data
+- Use the retrieved data to populate a Handlebars template for _server-side_ rendering to be displayed on the front-end
 
 ### User Stories
 As a member of FAC, I would like to: 
@@ -54,7 +64,7 @@ As a member of FAC, I would like to:
 
 ✅ Try to include ES6 syntax on the server
 
-![](https://media.giphy.com/media/xSYLxjcvDAMlW/giphy.gif
+![](https://media.giphy.com/media/xSYLxjcvDAMlW/giphy.gif)
 
 ### Schema
 
