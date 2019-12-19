@@ -5,6 +5,7 @@ exports.client = (req, res) => {
     layout: "error",
     statusCode: 404,
     errorMessage: "Page not found",
+    err: null,
   });
 };
 
@@ -13,5 +14,6 @@ exports.server = (err, req, res, next) => {
     layout: "error",
     statusCode: 500,
     errorMessage: "Internal server error",
+    err: err,
   });
 };
