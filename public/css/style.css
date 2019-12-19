@@ -65,6 +65,47 @@ h1 {
   padding: var(--space-l), 0;
 }
 
+/* cohort gallery */
+
+#cohort-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#cohort-gallery li {
+  padding: var(--space-m);
+  list-style-type: none;
+  font-family: "Monserrat", sans-serif;
+}
+
+
+.cohort_image_prof {
+  width: 200px;
+}
+
+.cohort_image_prof_frame {
+ width: 200px;
+}
+
+.cohort_image_party {
+  width: 200px;
+   display: none;
+   object-fit: none;
+  object-position: center;
+}
+
+/* user profile */
+
+.profile_image_prof {
+  width: 200px
+}
+
+.profile_image_party {
+  width: 200px;
+  display: none;
+}
+
 /* Error page styling */
 .error__desc {
   color: var(--slater);
