@@ -1,9 +1,8 @@
-const post = require("./../queries/postData");
-const qs = require("qs");
+const postData = require("./../queries/postData");
 
 exports.post = (req, res) => {
-  console.log(req.body);
-  postData(req.body, (err, response) => {
+  const userInput = req.body;
+  postData(userInput, (err, response) => {
     if (err) {
       throw err;
     } else {
