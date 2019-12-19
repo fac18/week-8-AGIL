@@ -37,7 +37,7 @@ const allUsers = [
   },
 ];
 
-tape("check we return all facsters for cohort page", t => {
+tape("1. Check we return all facsters for cohort page", t => {
   runDbBuild((err, res) => {
     if (err) {
       throw err;
@@ -52,7 +52,7 @@ tape("check we return all facsters for cohort page", t => {
   });
 });
 
-tape("check we return all data for a specific user", t => {
+tape("2. Check we return all data for a specific user", t => {
   const expected = {
     user_id: 1,
     user_name: "Ayub",
@@ -82,6 +82,47 @@ tape("check we return all data for a specific user", t => {
       }
       t.deepEqual(res[0], expected, "Should return details for Ayub");
       t.end();
+    });
+  });
+});
+
+tape("3. Check we can delete a specific user ", t => {
+  runDbBuild((err, res) => {
+    if (err) {
+      throw err;
+    }
+    deleteData.deleteUser(user_name, (err, res) => {
+      if (err) {
+        throw err;
+      }
+      t.deepEqual(res, "", "should return empty");
+      t.end();
+    });
+  });
+});
+
+tape("4. Check we can add new profile", t => {
+  runDbBuild((err, res) => {
+    if (err) {
+      throw err;
+    }
+    postData.postUser(userInput, (err, res) => {
+      if (err) {
+        throw err;
+      } else {
+        getData.getSpecificUser(userInput.user_name, (err, res) => {
+          if (err) {
+            throw err;
+          } else {
+            t.deepEqual(
+              res.user_name,
+              userInput.user_name,
+              "New username should match"
+            );
+            t.end();
+          }
+        });
+      }
     });
   });
 });
