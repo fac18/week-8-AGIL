@@ -58,7 +58,7 @@ svg {
   }
   50% {
     transform: rotateY(-180deg) translate(800px, 0px);
-    fill: orange;
+    fill: rgba(218, 200, 42, 0.931);
   }
   75% {
     transform: rotateY(-90deg) translate(400px, 0px);
