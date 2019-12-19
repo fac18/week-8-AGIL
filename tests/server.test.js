@@ -21,7 +21,7 @@ test("/ root route html test", t => {
 
 test("public folder css test", t => {
   request(app)
-    .get("/public/css/style.css")
+    .get("/css/style.css")
     .expect(200)
     .expect("content-type", /css/)
     .end((err, res) => {
@@ -32,7 +32,7 @@ test("public folder css test", t => {
 
 test("public folder css test", t => {
   request(app)
-    .get("/public/css/reset.css")
+    .get("/css/reset.css")
     .expect(200)
     .expect("content-type", /css/)
     .end((err, res) => {
@@ -43,7 +43,7 @@ test("public folder css test", t => {
 
 test("public folder javascript test", t => {
   request(app)
-    .get("/public/js/index.js")
+    .get("/js/index.js")
     .expect(200)
     .expect("content-type", /javascript/)
     .end((err, res) => {
@@ -63,9 +63,9 @@ test("/cohort endpoint html test", t => {
     });
 });
 
-test("get /userprofile endpoint html test", t => {
+test("get /cohort/:user endpoint html test", t => {
   request(app)
-    .get("/userprofile")
+    .get("/cohort/rosalie")
     .expect(200)
     .expect("content-type", /html/)
     .end((err, res) => {
