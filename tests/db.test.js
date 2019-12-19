@@ -7,32 +7,32 @@ const deleteData = require("../src/queries/deleteData");
 const allUsers = [
   {
     user_name: "Ayub",
-    image_prof: "URLHERE",
-    image_party: "URLHERE",
+    image_prof: "https://imgur.com/YRvPBum.jpg",
+    image_party: "https://imgur.com/01UUNru.jpg",
     quote: '"Alright, boss!"',
   },
   {
     user_name: "Gillian",
     image_prof: "https://imgur.com/poIIAAj.jpg",
     image_party: "https://imgur.com/tJeRoSc.jpg",
-    quote: '""',
+    quote: '"Thats wild!"',
   },
   {
     user_name: "Nikke",
-    image_prof: "URLHERE",
-    image_party: "URLHERE",
+    image_prof: "https://imgur.com/GeHdEeC.jpg",
+    image_party: "https://imgur.com/uQBYZHj.jpg",
     quote: '"Unlimited Graph Paper!"',
   },
   {
     user_name: "Rosa",
-    image_prof: "URLHERE",
-    image_party: "URLHERE",
+    image_prof: "https://imgur.com/912CuwX.jpg",
+    image_party: "https://imgur.com/VzQcMw5.jpg",
     quote: '"Bruhhh"',
   },
   {
     user_name: "Reda",
-    image_prof: "URLHERE",
-    image_party: "URLHERE",
+    image_prof: "https://imgur.com/YOderk2.jpg",
+    image_party: "https://imgur.com/IQQz6Qt.jpg",
     quote: '"Thats really great!"',
   },
 ];
@@ -41,8 +41,10 @@ const allUsers = [
 const userInput = {
   user_name: "Bailey",
   cohort_id: 1,
-  image_prof: "URLHERE",
-  image_party: "URLHERE",
+  image_prof:
+    "https://www.britishcockapoosociety.com/uploads/2/2/4/0/22400904/published/17760234-10154767344258882-3892042461596563925-n_1.jpg?1491743281",
+  image_party:
+    "https://ih1.redbubble.net/image.196335155.1563/flat,750x1000,075,f.u1.jpg",
   quote: '"Woof!"',
   emoji: "🌭",
   tea_coffee: "Pond water",
@@ -76,8 +78,8 @@ tape("2. Check we return all data for a specific user", t => {
     user_id: 1,
     user_name: "Ayub",
     cohort_id: 1,
-    image_prof: "URLHERE",
-    image_party: "URLHERE",
+    image_prof: "https://imgur.com/YRvPBum.jpg",
+    image_party: "https://imgur.com/01UUNru.jpg",
     quote: '"Alright, boss!"',
     emoji: "👀",
     tea_coffee: "No caffeine",
