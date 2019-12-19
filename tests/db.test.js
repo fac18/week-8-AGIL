@@ -51,3 +51,35 @@ tape("check we return all facers for cohort page", t => {
     });
   });
 });
+
+tape("check we return all data for a specific user", t => {
+  const expected = {
+    users_id: 1,
+    name: "Ayub",
+    image_prof: "URLHERE",
+    image_party: "URLHERE",
+    quote: '"Alright, boss!"',
+    emoji: "👀",
+    tea_coffee: "No caffeine",
+    hogwarts: "Slytherin",
+    cuisine: "Rice and chicken",
+    fruit: "Pineapple",
+    snack: "Fizzy laces",
+    show: "Vikings",
+    js: "Reduce",
+    pokemon: "Charizard",
+    emojigram: "👀👀👀👀👀",
+  };
+
+  runDbBuild((err, res) => {
+    if (err) {
+      throw err;
+    }
+    getData.getSpecificUser("Ayub", (err, res) => {
+      if (err) {
+        throw err;
+      }
+      t.deepEqual(res[0], expected, "Should return details for Ayub");
+    });
+  });
+});
