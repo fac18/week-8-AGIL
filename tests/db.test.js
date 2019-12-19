@@ -13,8 +13,8 @@ const allUsers = [
   },
   {
     user_name: "Gillian",
-    image_prof: "URLHERE",
-    image_party: "URLHERE",
+    image_prof: "https://imgur.com/poIIAAj.jpg",
+    image_party: "https://imgur.com/tJeRoSc.jpg",
     quote: '""',
   },
   {
@@ -36,6 +36,25 @@ const allUsers = [
     quote: '"Thats really great!"',
   },
 ];
+
+//for post test
+const userInput = {
+  user_name: "Bailey",
+  cohort_id: 1,
+  image_prof: "URLHERE",
+  image_party: "URLHERE",
+  quote: '"Woof!"',
+  emoji: "🌭",
+  tea_coffee: "Pond water",
+  hogwarts: "Gryffindor",
+  cuisine: "Bones",
+  fruit: "Bleuhghghgh",
+  snack: "More bones",
+  show: "Clifford the big red dog",
+  js: "bones()",
+  pokemon: "Houndoom",
+  emojigram: "🐕🦴",
+};
 
 tape("1. Check we return all facsters for cohort page", t => {
   runDbBuild((err, res) => {
@@ -86,27 +105,27 @@ tape("2. Check we return all data for a specific user", t => {
   });
 });
 
-tape("3. Check we can delete a specific user ", t => {
-  runDbBuild((err, res) => {
-    if (err) {
-      throw err;
-    }
-    deleteData.deleteUser(user_name, (err, res) => {
-      if (err) {
-        throw err;
-      }
-      t.deepEqual(res, "", "should return empty");
-      t.end();
-    });
-  });
-});
+// tape("3. Check we can delete a specific user ", t => {
+//   runDbBuild((err, res) => {
+//     if (err) {
+//       throw err;
+//     }
+//     deleteData.deleteUser(user_name, (err, res) => {
+//       if (err) {
+//         throw err;
+//       }
+//       t.deepEqual(res, "", "should return empty");
+//       t.end();
+//     });
+//   });
+// });
 
 tape("4. Check we can add new profile", t => {
   runDbBuild((err, res) => {
     if (err) {
       throw err;
     }
-    postData.postUser(userInput, (err, res) => {
+    postData(userInput, (err, res) => {
       if (err) {
         throw err;
       } else {
@@ -115,7 +134,7 @@ tape("4. Check we can add new profile", t => {
             throw err;
           } else {
             t.deepEqual(
-              res.user_name,
+              res[0].user_name,
               userInput.user_name,
               "New username should match"
             );
