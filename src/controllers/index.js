@@ -13,7 +13,7 @@ router.get("/", home.get);
 router.get("/cohort", cohort.get);
 router.get("/cohort/:userProfile", userProfile.get);
 router.get("/addyourself", addYourself.get);
-router.post("/submitnewprofile", submitNewProfile.post);
+router.post("/submitNewProfile", submitNewProfile.post);
 router.use(error.client);
 router.use(error.server);
 
