@@ -37,7 +37,7 @@ const allUsers = [
   },
 ];
 
-tape("check we return all facers for cohort page", t => {
+tape("check we return all facsters for cohort page", t => {
   runDbBuild((err, res) => {
     if (err) {
       throw err;
