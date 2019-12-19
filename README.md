@@ -1,13 +1,16 @@
 # week-8-AGIL
 
+Team AGILé
+
+![](https://media.giphy.com/media/UatRnEUNX8iCQ/giphy.gif)
+
 ### Installation instructions
 clone the repo
 run npm i 
 check our tests with npm test or check individual parts with npm testdb and npm testserver
 
-Our app seems to have stopped working on heroku...
+Tests
 
-Tests!
 [![codecov](https://codecov.io/gh/fac18/week-8-AGIL/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week-8-AGIL)
 
 [![Build Status](https://travis-ci.com/fac18/week-8-AGIL.svg?branch=master)](https://travis-ci.com/fac18/week-8-AGIL)
@@ -25,9 +28,11 @@ Build a server-rendered full-stack app
 ### User Stories
 As a member of FAC, I would like to: 
 
+- see a gallery of fellow FACsters
 - submit a profile with details about myself
 - see the details of other FAC friends
 - delete my profile if I so choose (GDPR!!)
+- click on a link and be directed to the FAC projects gallery
 
 ### Goals
 
@@ -35,24 +40,30 @@ As a member of FAC, I would like to:
 
 ✅ to discover the awesomeness of Handlebars! Spend time considering how to format your layouts, partials and helper functions.
 
-✅ Include tests and set up code coverage.
+✅ Include tests and set up code coverage
 
-We expect to see unit tests of pure functions, 
+🤪 We expect to see unit tests of pure functions
 
-✅ integration tests of your server routes, 
+✅ integration tests of your server routes
 
-✅ including tests for errors such as 404.
+✅ including tests for errors such as 404
 
-✅  You should write tests for your database and use a separate test database and build script.
+✅  You should write tests for your database and use a separate test database and build script
 
-Use Heroku or a similar service to host the app and the database.
+✅ Use Heroku or a similar service to host the app and the database
 
-✅ Try to include ES6 syntax on the server.
+✅ Try to include ES6 syntax on the server
 
+![](https://media.giphy.com/media/xSYLxjcvDAMlW/giphy.gif
 
+### Schema
+
+![](https://i.imgur.com/AmceXjV.png)
 
 ### We learnt: 
 
--  in express this line means you don't need to ref public in the route for your images or css files coming from the html file because it's already done!
+-  In express this line means you don't need to ref public in the route for your images or css files coming from the html file because it's already done!
 
 ``app.use(express.static(path.join(__dirname, "..", "public")));``
+
+- Don't change names of things! We changed some column names part way through (eg rename 'name' in the users table to 'user_name', and then had to go scouting for other instances all across different files
