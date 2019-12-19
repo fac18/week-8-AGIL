@@ -5,6 +5,8 @@ clone the repo
 run npm i 
 check our tests with npm test or check individual parts with npm testdb and npm testserver
 
+Our app seems to have stopped working on heroku...
+
 Tests!
 [![codecov](https://codecov.io/gh/fac18/week-8-AGIL/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week-8-AGIL)
 
