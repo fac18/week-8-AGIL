@@ -1,5 +1,4 @@
 const postData = require("./../queries/postData");
-const qs = require("qs");
 
 exports.post = (req, res) => {
   const userInput = req.body;
