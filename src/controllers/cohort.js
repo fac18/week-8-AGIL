@@ -1,5 +1,11 @@
-const cohort = require("./../model/index.js");
+const getData = require("./../queries/getData");
 
-exports.get = (req, res) => {
-  res.render("cohort", { cohort });
+exports.get = (req, response) => {
+  getData.getAllUsers((err, cohort) => {
+    if (err) {
+      throw error;
+    } else {
+      response.render("cohort", { cohort });
+    }
+  });
 };
