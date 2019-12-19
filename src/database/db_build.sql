@@ -32,7 +32,7 @@ CREATE TABLE users (
 
 INSERT INTO users (user_name, cohort_id, image_prof, image_party, quote, emoji, tea_coffee, hogwarts, cuisine, fruit, snack, show, js, pokemon, emojigram) VALUES 
 ('Ayub',1,'URLHERE', 'URLHERE', '"Alright, boss!"', '👀', 'No caffeine', 'Slytherin', 'Rice and chicken', 'Pineapple', 'Fizzy laces', 'Vikings', 'Reduce', 'Charizard', '👀👀👀👀👀'),
-('Gillian',1,'URLHERE', 'URLHERE', '""', '', 'Tea', 'Ravenclaw', 'Pub Food', 'Satsuma', 'Pickled Onion Monster Munch', 'Peep Show', 'setTimeout', 'Snorlax', '👊🐼'),
+('Gillian',1,'https://imgur.com/poIIAAj.jpg', 'https://imgur.com/tJeRoSc.jpg', '""', '', 'Tea', 'Ravenclaw', 'Pub Food', 'Satsuma', 'Pickled Onion Monster Munch', 'Peep Show', 'setTimeout', 'Snorlax', '👊🐼'),
 ('Nikke',1,'URLHERE', 'URLHERE', '"Unlimited Graph Paper!"', '🤓', 'Tea', 'Ravenclaw', 'Duck and rice', 'Mangosteen', 'Chocolate Raisins', 'Fleabag', '"Why is everything an object?!"', 'Pikachu', ''),
 ('Rosa',1,'URLHERE', 'URLHERE', '"Bruhhh"', '😍', 'Coffee', 'Hufflepuff', 'Yemeni', 'Nectarine', 'Lotus Biscuit Spread', 'Fleabag', 'Sorting Hat Function', 'Togepi', ''),
 ('Reda',1,'URLHERE', 'URLHERE', '"Thats really great!"', '🤦🏾‍♀️', 'Coffee', 'Ravenclaw', 'Vietnamese', 'Pomelo', 'Peanut M&Ms', 'The West Wing', 'RegEx', 'Jigglypuff', '🤪💕😂💃🧝‍♀️');
