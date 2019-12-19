@@ -6,38 +6,38 @@ const deleteData = require("../src/queries/deleteData");
 
 const allUsers = [
   {
-    name: "Ayub",
+    user_name: "Ayub",
     image_prof: "URLHERE",
     image_party: "URLHERE",
     quote: '"Alright, boss!"',
   },
   {
-    name: "Gillian",
+    user_name: "Gillian",
     image_prof: "URLHERE",
     image_party: "URLHERE",
     quote: '""',
   },
   {
-    name: "Nikke",
+    user_name: "Nikke",
     image_prof: "URLHERE",
     image_party: "URLHERE",
     quote: '"Unlimited Graph Paper!"',
   },
   {
-    name: "Rosa",
+    user_name: "Rosa",
     image_prof: "URLHERE",
     image_party: "URLHERE",
     quote: '"Bruhhh"',
   },
   {
-    name: "Reda",
+    user_name: "Reda",
     image_prof: "URLHERE",
     image_party: "URLHERE",
     quote: '"Thats really great!"',
   },
 ];
 
-tape("check we return all facers for cohort page", t => {
+tape("check we return all facsters for cohort page", t => {
   runDbBuild((err, res) => {
     if (err) {
       throw err;
@@ -54,8 +54,9 @@ tape("check we return all facers for cohort page", t => {
 
 tape("check we return all data for a specific user", t => {
   const expected = {
-    users_id: 1,
-    name: "Ayub",
+    user_id: 1,
+    user_name: "Ayub",
+    cohort_id: 1,
     image_prof: "URLHERE",
     image_party: "URLHERE",
     quote: '"Alright, boss!"',
@@ -80,6 +81,7 @@ tape("check we return all data for a specific user", t => {
         throw err;
       }
       t.deepEqual(res[0], expected, "Should return details for Ayub");
+      t.end();
     });
   });
 });
