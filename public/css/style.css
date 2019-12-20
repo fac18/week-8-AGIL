@@ -108,6 +108,10 @@ footer {
   font-family: var(--mont);
 }
 
+.group-pic {
+  display: none;
+}
+
 /* cohort page */
 
 #cohort-gallery {
@@ -289,6 +293,11 @@ button:hover {
     width: 50vw;
     justify-content: center;
     margin: auto;
+  }
+
+  .group-pic {
+    display: block;
+    padding: var(--space-xxl);
   }
 
 
