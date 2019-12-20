@@ -137,15 +137,15 @@ ul {
 
 /* flip card */
 
-.cohort_image {
-  width: 200px;
+.cohort-image {
+  width: 225px;
   height: 300px;
   object-fit: cover;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 200px;
+  width: 225px;
   height: 300px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -191,12 +191,14 @@ ul {
 /* user profile */
 
 .profile_image_prof {
-  width: 200px;
+  width: 225px;
+  height: 300px;
   object-fit: cover;
 }
 
 .profile_image_party {
-  width: 200px;
+  width: 225px;
+  height: 300px;
   display: none;
   object-fit: cover;
 
