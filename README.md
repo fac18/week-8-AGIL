@@ -73,6 +73,8 @@ As a member of FAC, I would like to:
 
 ![](https://i.imgur.com/AmceXjV.png)
 
+Cohorts table not currently in use
+
 ### We learnt: 
 
 -  In express this line means you don't need to ref public in the route for your images or css files coming from the html file because it's already done!
