@@ -247,12 +247,18 @@ button {
   background-color: var(--zack);
   font-family: var(--reenie);
   font-size: var(--space-xl);
-  color: var(--slater);
+  font-weight: bolder;
+  color: var(--jessie);
   text-shadow: var(--jessie);
   border-radius: 8px;
   border-style: none;
-  box-shadow: 4px 4px var(--slater);
+  box-shadow: 4px 4px var(--jessie);
   margin: var(--space-s);
+}
+
+button:hover {
+  text-shadow: var(--jessie);
+  background-color: var(--kelly);
 }
 
 .flexrow {
@@ -278,4 +284,12 @@ button {
     max-width: 400px;
     width: 25vw;
   }
+
+  form {
+    width: 50vw;
+    justify-content: center;
+    margin: auto;
+  }
+
+
 }
