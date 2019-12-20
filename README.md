@@ -80,3 +80,10 @@ As a member of FAC, I would like to:
 ``app.use(express.static(path.join(__dirname, "..", "public")));``
 
 - Don't change names of things! We changed some column names part way through (eg rename 'name' in the users table to 'user_name', and then had to go scouting for other instances all across different files
+
+- Server tests wouldn't finish, causing Travis to fail.  Fixed like this:
+```test("close server", t => {
+  app.close();
+  t.end();
+});
+```
