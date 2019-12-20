@@ -73,6 +73,8 @@ As a member of FAC, I would like to:
 
 ![](https://i.imgur.com/AmceXjV.png)
 
+Cohorts table not currently in use
+
 ### We learnt: 
 
 -  In express this line means you don't need to ref public in the route for your images or css files coming from the html file because it's already done!
@@ -87,3 +89,6 @@ As a member of FAC, I would like to:
   t.end();
 });
 ```
+- THERE ARE TWO VERSIONS OF TRAVIS-CI!!!!! travis-ci.org and travis-ci.com.  We had set ourselves up on both but only put env variables in one, and kept seeing conflicting messages!
+
+![](https://media.giphy.com/media/ovvihlE44nqBq/giphy.gif)
