@@ -1,7 +1,7 @@
 <h1>GO FAC YOURSELF!</h1>
 <form action="/submitNewProfile" method="POST">
     <div class="flexrow">
-        <label for="user_name">*Name</label>
+        <label for="user_name">Name</label>
         <input type="text" name="user_name" required>
     </div>
     <p>Photo URLs: please provide a link to a photo (or avatar or other graphical representation of you) that is hosted
@@ -10,11 +10,13 @@
         you include .jpg at the end of the filename</p>
     <div class="flexrow">
         <label for="image_prof">Professional image URL</label>
-        <input type="text" name="image_prof" required>
+        <input type="text" name="image_prof" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|jpeg)"
+            title="Please enter a url for a valid image (.jpeg, .jpg, .gif, .png) hosted on the web" required>
     </div>
     <div class="flexrow">
         <label for="image_party">Party image URL</label>
-        <input type="text" name="image_party" required>
+        <input type="text" name="image_party" pattern="(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|jpeg)"
+            title="Please enter a url for a valid image (.jpeg, .jpg, .gif, .png) hosted on the web" required>
     </div>
     <div class="flexrow">
         <label for="quote">What's a classic thing that you might say?</label>
