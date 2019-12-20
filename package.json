@@ -8,7 +8,7 @@
     "testdb": "NODE_ENV=test node tests/db.test.js | tap-spec",
     "testserver": "NODE_ENV=test node tests/server.test.js | tap-spec",
     "dev": "NODE_ENV=test nodemon src/index.js",
-    "coverage": "NODE_ENV=test nyc tape src/tests/*.js | tap-spec",
+    "coverage": "NODE_ENV=test nyc tape tests/*.js | tap-spec",
     "start": "node src/index.js",
     "dbbuild": "node src/database/db_init.js"
   },
