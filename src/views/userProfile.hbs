@@ -1,18 +1,32 @@
-<section class="user_profile">
-  <img class="profile_image_prof" src="{{image_prof}}" alt="">
-  <img class="profile_image_party" src="{{image_party}}" alt="">
-  <h1 class="user_name">{{ user_name }}</h1>
-  <p>{{quote}}</p>
-  <p>{{emoji}}</p>
-  <p>{{tea_coffee}}</p>
-  <p>{{hogwarts}}</p>
-  <p>{{cuisine}}</p>
-  <p>{{fruit}}</p>
-  <p>{{snack}}</p>
-  <p>{{show}}</p>
-  <p>{{js}}</p>
-  <p>{{pokemon}}</p>
-  <p>{{emojigram}}</p>
+    <section class="user_profile">
+    <h1 class="user_name">{{ user_name }}</h1>
+        <div class ="cohort-member-wrapper-profile">
+  <li class="cohort_member_user">
+      <div class="flip-card-user">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="cohort-image" src="{{image_prof}}" alt="professional image">
+          </div>
+          <div class="flip-card-back">
+            <img class="cohort-image" src="{{image_party}}" alt="party image">
+          </div>
+        </div>
+      </div>
+  <section class="answer_list">
+  <p id="quote"> {{quote}}</p>
+  <p><span class="answer"><strong>Fave emoji: </strong></span> {{emoji}}</p>
+  <p><span class="answer"><strong>Tea or coffee ☕: </strong></span>{{tea_coffee}}</p>
+  <p><span class="answer"><strong>Hogwarts house:</strong> </span>{{hogwarts}}</p>
+  <p><span class="answer"><strong>Last meal on 🌏:</strong></span> {{cuisine}}</p>
+  <p><span class="answer"><strong>🥝🍈🍊🍒🍉:</strong></span> {{fruit}}</p>
+  <p><span class="answer"><strong>Signature project snack:</strong></span> {{snack}}</p>
+  <p><span class="answer"><strong>Fave show:</strong></span> {{show}}</p>
+  <p><span class="answer"><strong>Fave JS function:</strong></span> {{js}}</p>
+  <p><span class="answer"><strong>Spirit pokomon:</strong></span>{{pokemon}}</p>
+  <p><span class="answer"><strong>Tell a story with emojis...</strong></span>{{emojigram}}</p>
+  </section>
   <br>
-  <a href="/deleteuser?user_name={{ user_name}}">Delete Facster</a>
+  </li>
+  </div>
+  <button><a href="/deleteuser?user_name={{ user_name}}">Delete Facster</a></button>
 </section>

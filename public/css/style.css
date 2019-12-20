@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  font-family: var(--mont);
   padding-bottom: var(--space-xl);
 }
 
@@ -205,10 +206,20 @@ ul {
 
 /* user profile */
 
+.flip-card-user {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  margin: auto;
+}
+
 .profile_image_prof {
   width: 225px;
   height: 300px;
   object-fit: cover;
+  margin: auto;
+  align-self: center;
 }
 
 .profile_image_party {
@@ -216,6 +227,50 @@ ul {
   height: 300px;
   display: none;
   object-fit: cover;
+  margin: auto;
+  align-self: center;
+}
+
+#quote {
+  /* font-family: var(--reenie); */
+  font-size: 40px;
+}
+
+.user_profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 90vw;
+  font-family: var(--mont);
+  color: var(--screech);
+}
+
+.answer {
+  color: var(--zack);
+}
+
+.cohort_member_user > p {
+  font-size: var(--space-m);
+  color: var(--screech);
+  text-align: center;
+}
+
+.cohort-member-wrapper-profile {
+  background: url(/images/paper.png);
+  background-size: cover;
+  background-blend-mode: luminosity;
+  /* padding-inline-start: 0px; */
+  justify-content: center;
+  max-width: 90vw;
+  margin: auto;
+  /* max-width: 400px; */
+  display: flex;
+  /* margin-bottom: var(--space-l); */
+  /* padding: 25px; */
+}
+.answer_list {
+  padding: 3em;
 }
 
 /* Add Yourself styling */
