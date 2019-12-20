@@ -87,3 +87,6 @@ As a member of FAC, I would like to:
   t.end();
 });
 ```
+- THERE ARE TWO VERSIONS OF TRAVIS-CI!!!!! travis-ci.org and travis-ci.com.  We had set ourselves up on both but only put env variables in one, and kept seeing conflicting messages!
+
+![](https://media.giphy.com/media/ovvihlE44nqBq/giphy.gif)
