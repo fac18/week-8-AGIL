@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: var(--space-xl);
 }
 
 main {
@@ -123,7 +124,7 @@ ul {
   background-blend-mode: luminosity;
   padding-inline-start: 0px;
   justify-content: center;
-  /* width: 90vw; */
+  width: 90vw;
   max-width: 400px;
   display: flex;
   margin-bottom: var(--space-l);
@@ -192,8 +193,6 @@ ul {
 .profile_image_prof {
   width: 200px;
   object-fit: cover;
-
-
 }
 
 .profile_image_party {
