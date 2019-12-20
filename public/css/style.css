@@ -9,6 +9,7 @@
   /* spacing variables: golden ratio */
   --space-xs: 0.382rem;
   --space-s: 0.618rem;
+  --space-sm: 0.78rem; /* added manually */
   --space-m: 1rem;
   --space-l: 1.618rem;
   --space-xl: 2.618rem;
@@ -89,6 +90,15 @@ h2,
   color: var(--jessie);
 }
 
+@media (max-width: 400px) {
+  #nav {
+    font-size: var(--space-sm);
+  }
+  footer {
+    font-size: var(--space-sm);
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -126,7 +136,7 @@ ul {
   background-blend-mode: luminosity;
   padding-inline-start: 0px;
   justify-content: center;
-  /* width: 90vw; */
+  width: 90vw;
   max-width: 400px;
   display: flex;
   margin-bottom: var(--space-l);
@@ -139,15 +149,15 @@ ul {
 
 /* flip card */
 
-.cohort_image {
-  width: 200px;
+.cohort-image {
+  width: 225px;
   height: 300px;
   object-fit: cover;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 200px;
+  width: 225px;
   height: 300px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -201,17 +211,20 @@ ul {
 }
 
 .profile_image_prof {
-  width: 200px;
+  width: 225px;
+  height: 300px;
   object-fit: cover;
   margin: auto;
   align-self: center;
 }
 
 .profile_image_party {
-  width: 200px;
+  width: 225px;
+  height: 300px;
   display: none;
   object-fit: cover;
   margin: auto;
+  align-self: center;
 }
 
 #quote {
@@ -289,12 +302,18 @@ button {
   background-color: var(--zack);
   font-family: var(--reenie);
   font-size: var(--space-xl);
-  color: var(--slater);
+  font-weight: bolder;
+  color: var(--jessie);
   text-shadow: var(--jessie);
   border-radius: 8px;
   border-style: none;
-  box-shadow: 4px 4px var(--slater);
+  box-shadow: 4px 4px var(--jessie);
   margin: var(--space-s);
+}
+
+button:hover {
+  text-shadow: var(--jessie);
+  background-color: var(--kelly);
 }
 
 .flexrow {
@@ -319,5 +338,11 @@ button {
   #cohort-member-wrapper {
     max-width: 400px;
     width: 25vw;
+  }
+
+  form {
+    width: 50vw;
+    justify-content: center;
+    margin: auto;
   }
 }
