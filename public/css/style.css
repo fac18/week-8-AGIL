@@ -124,10 +124,10 @@ ul {
   padding-inline-start: 0px;
   justify-content: center;
   /* width: 90vw; */
-  max-width: 383px;
+  max-width: 400px;
   display: flex;
   margin-bottom: var(--space-l);
-  padding: 50px 0px;
+  padding: 25px;
 }
 
 #cohort-member-wrapper > li > a {
@@ -203,6 +203,51 @@ ul {
 
 }
 
+/* Add Yourself styling */
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: var(--space-l);
+  padding: var(--space-l);
+  background-color: #4d5aa1f5;
+  border-radius: 11px;
+}
+
+label {
+  display: block;
+  font-family: var(--mont);
+  font-size: var(--space-m);
+  /* line-height: var(--space-l); */
+  /* text-shadow: 2px 2px var(--zack); */
+}
+
+input {
+  background-color: var(--lisa);
+  border-radius: 8px;
+  border-style: none;
+  margin-top: var(--space-s);
+  padding-inline-start: var(--space-m);
+  font-family: var(--mont);
+}
+
+button {
+  background-color: var(--zack);
+  font-family: var(--reenie);
+  font-size: var(--space-xl);
+  color: var(--slater);
+  text-shadow: var(--jessie);
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: 4px 4px var(--slater);
+  margin: var(--space-s);
+}
+
+.flexrow {
+  padding: var(--space-s);
+}
+
 /* Error page styling */
 .error__desc {
   color: var(--slater);
@@ -222,7 +267,7 @@ ul {
 @media (min-width: 1139px) {
 
 #cohort-member-wrapper {
-  max-width: 383px;
+  max-width: 400px;
   width: 25vw;
 }
 
