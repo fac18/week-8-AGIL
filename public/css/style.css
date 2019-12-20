@@ -27,7 +27,7 @@ html {
   scroll-behavior: smooth;
   width: 100vw;
   background: url("/images/sbtb-bground.png") no-repeat fixed;
-  background-color: rgba(0, 0, 0, 0.527);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
   background-size: cover;
   color: var(--jessie);
@@ -40,6 +40,20 @@ body {
   position: relative;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#cohort-gallery {
+  background: url("/images/paper.png");
+  background-size: contain;
+  background-blend-mode: luminosity;
+  padding-inline-start: 0px;
+  width: 90vw;
+  justify-content: center;
+}
+
 h1 {
   margin-top: var(--space-xl);
   font-family: var(--reenie);
@@ -48,6 +62,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 4px 4px var(--zack);
+  background-color: var(--lisa);
 }
 
 #nav {
