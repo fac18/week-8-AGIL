@@ -206,11 +206,7 @@ ul {
 
 /* user profile */
 
-.flip-card-user {
-  background-color: transparent;
-  width: 200px;
-  height: 300px;
-  perspective: 1000px;
+#user-flip-card {
   margin: auto;
 }
 
@@ -250,7 +246,7 @@ ul {
   color: var(--zack);
 }
 
-.cohort_member_user > p {
+.cohort-member-user > p {
   font-size: var(--space-m);
   color: var(--screech);
   text-align: center;
@@ -355,6 +351,4 @@ button:hover {
     padding: var(--space-xxl);
     margin: auto;
   }
-
-
 }
