@@ -2,6 +2,7 @@
 <main>
 <ul id="cohort-gallery">
   {{#each cohort}}
+  <div id ="cohort-member-wrapper">
   <li class="cohort_member">
     <a href="/cohort/{{user_name}}">
       <div class="flip-card">
@@ -19,6 +20,7 @@
     <p>{{quote}}</p>
 
   </li>
+  </div>
   {{/each}}
 </ul>
 </main>
