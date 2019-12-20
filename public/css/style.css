@@ -9,6 +9,7 @@
   /* spacing variables: golden ratio */
   --space-xs: 0.382rem;
   --space-s: 0.618rem;
+  --space-sm: 0.78rem; /* added manually */
   --space-m: 1rem;
   --space-l: 1.618rem;
   --space-xl: 2.618rem;
@@ -57,7 +58,8 @@ h1 {
   text-shadow: 4px 4px var(--zack);
 }
 
-h2, .cohort_member > p {
+h2,
+.cohort_member > p {
   font-family: var(--reenie);
   font-size: var(--space-l);
   color: var(--screech);
@@ -86,6 +88,15 @@ h2, .cohort_member > p {
   color: var(--jessie);
 }
 
+@media (max-width: 400px) {
+  #nav {
+    font-size: var(--space-sm);
+  }
+  footer {
+    font-size: var(--space-sm);
+  }
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -93,7 +104,7 @@ footer {
   text-align: center;
   background-color: var(--kelly);
   padding: var(--space-s);
-  font-family: var(--mont)
+  font-family: var(--mont);
 }
 
 /* cohort page */
@@ -192,15 +203,12 @@ ul {
 .profile_image_prof {
   width: 200px;
   object-fit: cover;
-
-
 }
 
 .profile_image_party {
   width: 200px;
   display: none;
   object-fit: cover;
-
 }
 
 /* Add Yourself styling */
@@ -261,14 +269,10 @@ button {
   margin: auto;
 }
 
-
-
 /* media queries */
 @media (min-width: 1139px) {
-
-#cohort-member-wrapper {
-  max-width: 400px;
-  width: 25vw;
-}
-
+  #cohort-member-wrapper {
+    max-width: 400px;
+    width: 25vw;
+  }
 }
