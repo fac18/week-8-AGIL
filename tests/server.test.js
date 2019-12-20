@@ -124,3 +124,8 @@ test("404 test", t => {
       t.end();
     });
 });
+
+test("close server", t => {
+  app.close();
+  t.end();
+});
