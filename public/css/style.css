@@ -40,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: var(--space-xl);
 }
 
 main {
@@ -134,7 +135,7 @@ ul {
   background-blend-mode: luminosity;
   padding-inline-start: 0px;
   justify-content: center;
-  /* width: 90vw; */
+  width: 90vw;
   max-width: 400px;
   display: flex;
   margin-bottom: var(--space-l);
@@ -147,15 +148,15 @@ ul {
 
 /* flip card */
 
-.cohort_image {
-  width: 200px;
+.cohort-image {
+  width: 225px;
   height: 300px;
   object-fit: cover;
 }
 
 .flip-card {
   background-color: transparent;
-  width: 200px;
+  width: 225px;
   height: 300px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -201,12 +202,14 @@ ul {
 /* user profile */
 
 .profile_image_prof {
-  width: 200px;
+  width: 225px;
+  height: 300px;
   object-fit: cover;
 }
 
 .profile_image_party {
-  width: 200px;
+  width: 225px;
+  height: 300px;
   display: none;
   object-fit: cover;
 }
